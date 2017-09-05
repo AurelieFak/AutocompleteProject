@@ -34,9 +34,8 @@ import javax.swing.SwingUtilities;
  * Autocomplete Engine Contains all the functions allowing the autocomplete to
  * work
  * 
- * Controller ?
  */
-public class SuggestionPanel {
+public class AutocompletePopup {
 
     private final JTextArea taFormula;
     private String subWord;
@@ -48,7 +47,7 @@ public class SuggestionPanel {
     private JPopupMenu popupMenu;
     private JScrollPane scrollPane;
 
-    public SuggestionPanel(AutocompleteController ac, JTextArea taFormula, String subWord, int position, Point location, Trie newTrie, List<SuggestionItem> listItems, List<String> listFunctionNames) {
+    public AutocompletePopup(AutocompleteController ac, JTextArea taFormula, String subWord, int position, Point location, Trie newTrie, List<SuggestionItem> listItems, List<String> listFunctionNames) {
         //possible de reduire le nombre de parametres ?       
         this.ac = ac;
         this.taFormula = taFormula;
